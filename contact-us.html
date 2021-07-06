@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="styling.css">
+
+	<title>Comment Form</title>
+</head>
+<body>
+
+		<p class="cnt">Although email is our preferred mode of contact, please feel free to contact us with any query/opportunity you have. We would love to hear from you!</p>
+
+	<div class="container">
+		<form action="connect.php" method="POST" class="comment">
+			<p class="comment-text" style="font-size: 2rem; font-weight: 800;">Comment About Us</p><hr><br>
+			<div class="input-group">
+			
+				<input type="text" placeholder="Name" name="username" required>
+			</div>
+			<div class="input-group">
+		
+				<input type="email" placeholder="Email" name="email" required>
+			</div>
+			<div class="input-group">
+                <textarea name="comment" id="cmnt" placeholder=" Put Comment here" cols="30" rows="5" style="border-radius:10px;"></textarea>
+				
+			</div><br>
+			<div class="input-group">
+				<input type="submit" value="Post" name="submit" class='btn'></input><br>
+				<input type="reset" value="Clear" class='btn'></input>
+			</div><br>
+		</form>
+	</div>
+	&nbsp; &nbsp; &nbsp;<a href='index.html' class="button">Home</a><!--<input type="submit" value="Home" class="btn">--></a>
+		
+		
+</body>
+</html>
